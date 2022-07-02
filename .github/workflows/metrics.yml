@@ -44,6 +44,8 @@ jobs:
 
   runs-cleaner:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Clean workflow runs
         uses: dmvict/clean-workflow-runs@v1.0.0
