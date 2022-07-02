@@ -1,2 +1,0 @@
-- name: Clean workflow runs
-  uses: dmvict/clean-workflow-runs@v1.0.0

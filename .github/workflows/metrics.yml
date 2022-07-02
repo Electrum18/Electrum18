@@ -41,3 +41,12 @@ jobs:
           plugin_people_types: followers, following
           plugin_repositories: yes
           plugin_repositories_featured: electrum18/the-fluffies
+
+  runs-cleaner:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clean workflow runs
+        uses: dmvict/clean-workflow-runs@v1.0.0
+        with:
+          save_period: 1
+          save_min_runs_number: 0
